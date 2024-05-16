@@ -1,0 +1,17 @@
+.pages {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	button {
+		padding: 10px;
+		background: blue;
+		border-radius: 10px;
+		border: none;
+		color: white;
+		transition: 0.5px;
+	}
+	button:hover {
+		box-shadow: 0 1px 3px 4px blue;
+	}
+}

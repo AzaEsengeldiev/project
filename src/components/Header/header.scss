@@ -1,0 +1,50 @@
+#header {
+	background: url('https://s3-alpha-sig.figma.com/img/e17e/e1b5/a6942e4049443a53216df8bc24a16de4?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=n3Yggm4XFvEJW2ocQkx-eschLE3WpBUUQduI5NSkZGlxlGafHjspbmbSBcK7fAhX7sewlRPCvNVOGIyPOoMWn7DhFGEgDW-p5WYui55oauf7jTiQvJhWjHz98JtekMPaFatr3a1S-rPJitS2KI73mtCW3pFD5HnfsQ7OxIi0EbY4vFioiOChNGjEvA8AeARlZNg3BULh3m8e7J1i~p0L1~vFv4S5jcLlp~pV5FfXkWB3aAmvpNnKjn5ERk6CsIZDFbIVhAboievIjVscVRgI~Y0nNwwa-yFUN~42MxRQ7-dG7m4rOcwmUm2q~SjdDxBr~CHGqQBiEhPFdYVsCNd0gQ__');
+	// opacity: 0.5;
+	// background-color: rgb(6, 127, 232);
+	//  opacity: 0.4;
+	.header {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		padding: 20px 0 100px 0px;
+		gap: 30px;
+		h1 {
+			font-size: 50px;
+			font-weight: 800;
+			color: dark;
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+				Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+				sans-serif;
+			// filter: drop-shadow(30px 10px 4px green); //  : 1px 0 0 3px white;
+		}
+		.nav {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 30px;
+			p {
+				color: rgba(0, 0, 0, 0.624);
+				font-size: 20px;
+				font-weight: 600;
+			}
+			nav {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 10px;
+
+				button {
+					background: none;
+					border: none;
+					color: dark;
+					font-size: 20px;
+					font-weight: 900;
+					// width: 100px;
+					// height: 100px;
+				}
+			}
+		}
+	}
+}
