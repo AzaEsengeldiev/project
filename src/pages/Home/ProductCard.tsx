@@ -6,13 +6,10 @@ import { Md10K, MdDelete } from 'react-icons/md'
 import { AiFillEdit } from 'react-icons/ai'
 
 const ProductCard = ({ el }: any) => {
-	if (!el) return null
-
 	const { deleteProduct } = useProductContext()
 	const nav = useNavigate()
-	// deleteProduct()
-	// useEffect()
-
+  
+	if (!el) return null
 	return (
 		<div className=''>
 			<div className='container'>
