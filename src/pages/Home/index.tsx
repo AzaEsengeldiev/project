@@ -7,7 +7,7 @@ import SearchCard from '../../components/Search/SearchCard'
 import Pagination from '../../components/Pagination'
 
 const Home = () => {
-	const { data, readProduct, searchValues, SearchInputValue } =
+	const { data, readProduct, searchValues } =
 		useProductContext()
 	const [currentPage, setCurrentPage] = useState<number>(1)
 	const [DataPerPage] = useState<number>(3)

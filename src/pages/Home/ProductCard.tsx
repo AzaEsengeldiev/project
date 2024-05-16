@@ -6,6 +6,8 @@ import { Md10K, MdDelete } from 'react-icons/md'
 import { AiFillEdit } from 'react-icons/ai'
 
 const ProductCard = ({ el }: any) => {
+	if (!el) return null
+
 	const { deleteProduct } = useProductContext()
 	const nav = useNavigate()
 	// deleteProduct()
@@ -23,7 +25,7 @@ const ProductCard = ({ el }: any) => {
 						<button className='delBtn' onClick={() => deleteProduct(el.id)}>
 							<MdDelete />
 						</button>
-						<button  className='EditBtn' onClick={() => nav(`/edit/${el.id}`)}>
+						<button className='EditBtn' onClick={() => nav(`/edit/${el.id}`)}>
 							<AiFillEdit />
 						</button>
 					</div>

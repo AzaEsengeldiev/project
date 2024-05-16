@@ -14,11 +14,19 @@ export default function ProductContext({ children }: any) {
 	const [SearchInputValue, setSearchInputValue] = useState<string>('')
 
 	async function addProduct(newProduct: object) {
-		await axios.post(API, newProduct)
+		try {
+			await axios.post(API, newProduct)
+		} catch (error) {
+			console.log(error)
+		}
 	}
 	async function readProduct() {
-		const { data } = await axios.get(API)
-		setData(data)
+		try {
+			const { data } = await axios.get(API)
+			setData(data)
+		} catch (error) {
+			console.log(error)
+		}
 	}
 	async function deleteProduct(id: any) {
 		try {
